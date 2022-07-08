@@ -26,8 +26,9 @@ jobs:
       uses: VaultVulp/action-pipenv@v2.0.1
       with:
         command: install -d
-    - name: Données Vaccin France
-      run: |
-        pipenv run python src/script.py
+    - name: Script
+      uses: VaultVulp/action-pipenv@v2.0.1
+      with:
+        command: run python src/script.py
     - uses: stefanzweifel/git-auto-commit-action@v4
     
