@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 
-df = pd.read_csv("https://raw.githubusercontent.com/owid/notebooks/main/EdouardMathieu/monkeypox/owid-monkeypox-data.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/owid/monkeypox/main/owid-monkeypox-data.csv")
 df_world = df[df["location"] == "World"]
 df = df[df["location"] != "World"]
 
